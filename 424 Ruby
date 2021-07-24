@@ -1,0 +1,39 @@
+# Emily Naderi
+# CS 424 Ruby Project
+# July 24, @021
+
+IO.foreach ("register.txt")
+
+
+#end
+#a=IO.readlines("register.txt")
+#puts a[0]
+
+class StudentInfo
+
+  def initialize(name, title)
+    @student_name = name
+    @course_title = title
+  end
+
+  def  display_details()
+    puts "Student name #@student_name"
+    puts "Course Title #@course_title"
+  end
+end
+
+class CourseInfo
+
+  def initialize(name, num, title)
+    @student_name = name
+    @course_num = num
+    @course_title = title
+  end
+
+  def  display_details()
+    puts "Course #@course_num  #@course_title"
+    puts "Student name #@student_name"
+  end
+end
+s=StudentInfo.new('john', 'math')
+s.display_details
